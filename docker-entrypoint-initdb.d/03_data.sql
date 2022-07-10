@@ -1,0 +1,1 @@
+INSERT INTO posts(name, content) VALUES ('image', 'nature');

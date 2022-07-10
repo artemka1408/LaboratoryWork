@@ -27,7 +27,7 @@ X-Password: secret
 Content-Type: application/json
 
 {
-  "id": 2,
+  "id": 3,
   "login": "vanya",
   "password": "top-secret"
 }
@@ -36,3 +36,46 @@ Content-Type: application/json
 DELETE http://localhost:8080/users/2
 X-Login: vasya
 X-Password: secret
+
+------------------
+------------------
+
+### posts.getAll
+GET http://localhost:8080/posts
+X-Login: vasya
+X-Password: secret
+
+### posts.getById
+GET http://localhost:8080/posts/1
+X-Login: vasya
+X-Password: secret
+
+### posts.create
+POST http://localhost:8080/posts
+X-Login: vasya
+X-Password: secret
+Content-Type: application/json
+
+{
+  "id": 0,
+  "login": "vanya",
+  "password": "secret"
+}
+
+### posts.update
+PUT http://localhost:8080/posts
+X-Login: vasya
+X-Password: secret
+Content-Type: application/json
+
+{
+  "id": 3,
+  "login": "vanya",
+  "password": "top-secret"
+}
+
+### posts.deleteById
+DELETE http://localhost:8080/posts/1
+X-Login: vasya
+X-Password: secret
+
